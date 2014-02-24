@@ -1,0 +1,22 @@
+How to install
+
+Usage
+
+/*
+ 
+ CREATE TABLE IF NOT EXISTS `rir_images` (
+  `id_image` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `MD5` VARCHAR(40) NOT NULL,
+  `url` VARCHAR(500) NOT NULL,
+  `date_created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `date_last_view` DATETIME,
+  `size` INT(10) NOT NULL DEFAULT 0,
+  `width` INT(10) NOT NULL DEFAULT 0,
+  `height` INT(10) NOT NULL DEFAULT 0,
+  `views` BIGINT  NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id_image`),
+  INDEX `rir_images_IK_MD5` (`MD5` ASC)
+) 
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;*/

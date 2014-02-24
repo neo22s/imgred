@@ -1,0 +1,21 @@
+just another php framework
+jaf
+
+config.php, defines
+error handler
+phpMyDB
+wrapperCache
+phpSEO
+bootstrap(url handler, i18n, autoload, cache, db connection)
+HelperBase (clean request, url friendly)
+ControllerBase (request)
+ModelBase (db, CRUD)
+TemplateBase (html content (cached), title, description, keywords, metas, JS, common header, common footer)
+index.php (html content)
+Code generator mysql class generator, using model Base
+
+
+ORM
+logging profiling
+plugins
+routes
